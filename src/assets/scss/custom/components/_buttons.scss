@@ -1,0 +1,26 @@
+// 
+// buttons.scss
+//
+
+.btn {
+    .mdi {
+        &:before {
+            line-height: initial;
+        }
+    }
+}
+
+.btn-rounded {
+    border-radius: 2em;
+}
+
+// Button Shadows
+@each $color, $value in $theme-colors {
+    .btn-#{$color} {
+        @include button-shadow($value);
+    }
+}
+
+.btn-link {
+    box-shadow: none !important;
+}

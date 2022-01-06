@@ -1,0 +1,15 @@
+//
+// slimscroll.scss
+//
+
+@import '~simplebar/dist/simplebar.min.css';
+
+.simplebar-scrollbar {
+    width: 4px !important;
+
+    &:before {
+        background: rgb(158, 165, 171);
+        height: 100%;
+        width: 100%;
+    }
+}

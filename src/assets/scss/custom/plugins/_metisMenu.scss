@@ -1,0 +1,167 @@
+// Metis Menu Overwrite
+@import '~metismenujs/scss/metismenujs';
+
+
+// Metis Menu Overwrite
+
+.metismenu {
+    padding: 0;
+    margin: 0;
+
+    li {
+        list-style: none;
+    }
+
+    ul {
+        padding: 0;
+    }
+
+    .mm-collapse:not(.mm-show) {
+        display: none;
+    }
+
+    .mm-collapsing {
+        position: relative;
+        height: 0;
+        overflow: hidden;
+        transition-timing-function: ease;
+        transition-duration: .35s;
+        transition-property: height, visibility;
+    }
+    .has-arrow {
+        &:after {
+            width: 0.45em;
+            height: 0.45em;
+            right: 2em;
+            border-width: 0 1px 1px 0;
+        }
+    }
+
+    .mm-active > .has-arrow::after, 
+    .has-arrow[aria-expanded="true"]::after {
+        transform: rotate(45deg) translate(0, -50%);
+    }
+}
+
+.side-nav-second-level,
+.side-nav-third-level,
+.side-nav-forth-level {
+    li {
+        a {
+            padding: 8px 20px 8px 68px;
+            color: $menu-item;
+            display: block;
+            position: relative;
+            transition: all 0.4s;
+
+            &:focus,
+            &:hover {
+                color: $menu-item-hover;
+            }
+
+            .menu-arrow {
+                line-height: 1.3rem;
+            }
+        }
+
+        &.mm-active {
+            >a {
+                color: $menu-item-active;
+            }
+        }
+    }
+}
+
+body[data-leftbar-theme="light"] {
+    .side-nav {
+
+        .side-nav-second-level,
+        .side-nav-third-level,
+        .side-nav-forth-level {
+            li {
+                a {
+                    color: $menu-item-light;
+
+                    &:focus,
+                    &:hover {
+                        color: $menu-item-light-hover;
+                    }
+                }
+
+                &.mm-active {
+                    >a {
+                        color: $menu-item-light-active;
+                    }
+                }
+            }
+        }
+    }
+}
+
+body[data-layout="detached"] {
+    .side-nav {
+
+        .side-nav-second-level,
+        .side-nav-third-level,
+        .side-nav-forth-level {
+            li {
+                a {
+                    color: $menu-item-dark;
+
+                    &:focus,
+                    &:hover {
+                        color: $menu-item-dark-hover;
+                    }
+                }
+
+                &.mm-active {
+                    >a {
+                        color: $menu-item-dark-active !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+body[data-leftbar-theme="dark"] {
+    .side-nav {
+
+        .side-nav-second-level,
+        .side-nav-third-level,
+        .side-nav-forth-level {
+            li {
+                a {
+                    color: $sidebar-dark-menu-item;
+
+                    &:focus,
+                    &:hover {
+                        color: $sidebar-dark-menu-item-hover;
+                    }
+                }
+
+                &.mm-active {
+                    >a {
+                        color: $sidebar-dark-menu-item-active;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.side-nav-third-level {
+    li {
+        a {
+            padding: 8px 20px 8px 84px;
+        }
+    }
+}
+
+.side-nav-forth-level {
+    li {
+        a {
+            padding: 8px 20px 8px 100px;
+        }
+    }
+}

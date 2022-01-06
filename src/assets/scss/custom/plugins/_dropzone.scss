@@ -1,0 +1,23 @@
+//
+// dropzone.scss
+//
+
+.dropzone {
+    border: 2px dashed $input-border-color;
+    background: $input-bg;
+    border-radius: 6px;
+    cursor: pointer;
+    outline: none;
+    min-height: 150px;
+
+    .dz-message {
+        text-align: center;
+        padding: 40px;
+        outline: none !important;
+    }
+    &.dz-started {
+        .dz-message {
+            display: none;
+        }
+    }
+}

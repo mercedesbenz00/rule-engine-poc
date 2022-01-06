@@ -1,0 +1,102 @@
+{
+    "name": "Advertise Rule",
+
+    "decisions": [
+        {
+            "conditions": {
+                "any":[{
+                    "all": [{
+                        "fact": "hobby",
+                        "operator": "equal",
+                        "value": "basketball"
+                    },
+                    {
+                        "fact": "state",
+                        "operator": "equal",
+                        "value": 1
+                    }
+                ]},
+                {
+                    "all": [{
+                        "fact": "hobby",
+                        "operator": "equal",
+                        "value": "football"
+                    },
+                    {
+                        "fact": "state",
+                        "operator": "equal",
+                        "value": 1
+                    }
+                ]}
+
+            ]},
+            "event": {
+                "type": "Sport"
+            }
+        },
+        {
+            "conditions": {
+                "any":[{
+                    "all": [{
+                        "fact": "hobby",
+                        "operator": "equal",
+                        "value": "reading"
+                    },
+                    {
+                        "fact": "state",
+                        "operator": "equal",
+                        "value": 1
+                    }
+                ]},
+                {
+                    "all": [{
+                        "fact": "hobby",
+                        "operator": "equal",
+                        "value": "program"
+                    },
+                    {
+                        "fact": "state",
+                        "operator": "equal",
+                        "value": 1
+                    }
+                ]}
+
+            ]},
+            "event": {
+                "type": "Science"
+            }
+        },
+        {
+            "conditions": {
+                "any":[{
+                    "all": [{
+                        "fact": "hobby",
+                        "operator": "equal",
+                        "value": "music"
+                    },
+                    {
+                        "fact": "state",
+                        "operator": "equal",
+                        "value": 1
+                    }
+                ]},
+                {
+                    "all": [{
+                        "fact": "hobby",
+                        "operator": "equal",
+                        "value": "dance"
+                    },
+                    {
+                        "fact": "state",
+                        "operator": "equal",
+                        "value": 1
+                    }
+                ]}
+
+            ]},
+            "event": {
+                "type": "Entertainment"
+            }
+        }
+    ]
+}

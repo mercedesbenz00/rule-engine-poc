@@ -1,0 +1,113 @@
+// 
+// general.scss
+//
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+label {
+  margin-bottom: 0;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.react-select {
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 0.8rem !important;
+}
+
+.react-datepicker-wrapper {
+  font-size: 0.8rem !important;
+}
+
+.datepicker {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.factory-img {
+  width: 230px;
+  height: 138px;
+}
+
+.edit-label {
+  border: 1px solid  #eef2f7;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 0px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: #f9f9fd;
+  display: block;
+}
+
+.edit-label-last {
+  border: 1px solid  #eef2f7;
+  border-left: 0px;
+  border-right: 0px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: #f9f9fd;
+  display: block;
+}
+
+.edit-value {
+  border: 1px solid  #eef2f7;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 0px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: block;
+}
+
+.edit-value-last {
+  border: 1px solid  #eef2f7;
+  border-left: 0px;
+  border-right: 0px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: block;
+}
+
+.none-border {
+  border: 0px solid !important;
+}
+
+.form-control {
+  font-size: 0.8rem !important;
+}
+
+.required {
+  color: rgb(230, 28, 28)
+}
+
+.card-header {
+  padding: 0;
+}
+
+.h-38 {
+  height: 38px;
+}
+
+// Fix event bubbling on iOS devices
+@supports (-webkit-overflow-scrolling: touch) {
+  body {
+    cursor: pointer;
+  }
+}
+
+body {
+  transform: scale(1);
+  -moz-transform:scale(1);
+  -webkit-transform:scale(1);
+  -o-transform:scale(1);
+  -ms-transform:scale(1);
+}

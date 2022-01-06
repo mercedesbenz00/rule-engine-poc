@@ -1,0 +1,27 @@
+/* rich text editor */
+.rich-editor-wrapper {
+    border: 1px solid $input-border-color;
+    border-radius: $input-border-radius;
+    min-height: 200px;
+
+    .rich-editor {
+        padding: 0.45rem 0.9rem;
+    }
+
+    .rdw-editor-toolbar {
+        border: 0;
+        border-bottom: 1px solid $input-border-color;
+    }
+
+    .rdw-dropdown-wrapper {
+        box-shadow: none;
+        border: 1px solid $input-border-color;
+        border-radius: $input-border-radius;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .rich-editor-wrapper {
+        min-height: 300px;
+    }
+}
